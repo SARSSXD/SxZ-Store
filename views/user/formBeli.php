@@ -3,7 +3,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 require_once __DIR__ . '/../main-layouts.php';
-require '/laragon/www/UASWEB/models/dbConfig.php';
+require_once __DIR__ .'/../../models/dbConfig.php';
 require_once __DIR__ . '/../../models/connection.php';
 
 $item_id = isset($_GET['id']) ? intval($_GET['id']) : 0;

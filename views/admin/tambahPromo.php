@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-require '../main-layouts.php'; // Gunakan path absolut relatif terhadap file ini
+require_once __DIR__ . '../../main-layouts.php';
 require_once __DIR__ . '/../../models/dbConfig.php'; // Gunakan path absolut relatif terhadap file ini
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

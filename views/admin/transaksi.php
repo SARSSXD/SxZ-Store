@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-require '/laragon/www/UASWEB/views/main-layouts.php'; // Gunakan path absolut relatif terhadap file ini
+require_once __DIR__ . '../../main-layouts.php';
 require_once __DIR__ . '/../../models/dbConfig.php'; // Gunakan path absolut relatif terhadap file ini
 
 $transaksi = query("SELECT * FROM transaksi");

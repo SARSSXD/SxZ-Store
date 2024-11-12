@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-require '../main-layouts.php';
+require_once __DIR__ . '../../main-layouts.php';
 require_once __DIR__ . '/../../models/connection.php'; // Gunakan path absolut relatif terhadap file ini
 
 // Ambil ID nominal dari URL
